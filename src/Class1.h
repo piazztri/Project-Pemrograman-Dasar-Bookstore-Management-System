@@ -5,9 +5,11 @@
 //  Original author: moog
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_D771EDC2_64C4_4c4b_8783_0A020046F11D__INCLUDED_)
-#define EA_D771EDC2_64C4_4c4b_8783_0A020046F11D__INCLUDED_
+#ifndef CLASS1_H
+#define CLASS1_H
 
+#include <string>
+using namespace std;
 class Class1
 {
 
@@ -39,4 +41,4 @@ private:
 	string password;
 
 };
-#endif // !defined(EA_D771EDC2_64C4_4c4b_8783_0A020046F11D__INCLUDED_)
+#endif // CLASS1_H

@@ -5,11 +5,13 @@
 //  Original author: moog
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_3987092E_63CA_4e99_A1F4_BFCF1A1A3E4D__INCLUDED_)
-#define EA_3987092E_63CA_4e99_A1F4_BFCF1A1A3E4D__INCLUDED_
+#ifndef CLASSBOOK_H
+#define CLASSBOOK_H
 
 #include "Orders.h"
 #include "Class1.h"
+#include <string>
+using namespace std;
 
 class Customer : public Register
 {
@@ -19,9 +21,9 @@ public:
 	virtual ~Customer();
 	Orders *m_Orders;
 
-	login();
-	register();
-	updateProfile();
+	void login();
+	void registerUser();
+	void updateProfile();
 
 private:
 	string bankAccount;
@@ -30,4 +32,4 @@ private:
 	string phoneNumber;
 
 };
-#endif // !defined(EA_3987092E_63CA_4e99_A1F4_BFCF1A1A3E4D__INCLUDED_)
+#endif // CLASSBOOK_H

@@ -5,11 +5,13 @@
 //  Original author: moog
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_93EF3E41_2A37_4826_8A03_223371A83554__INCLUDED_)
-#define EA_93EF3E41_2A37_4826_8A03_223371A83554__INCLUDED_
+#ifndef ORDERS_H
+#define ORDERS_H
 
 #include "Catalog.h"
 #include "OrderDetails.h"
+#include <string>
+using namespace std;
 
 class Orders
 {
@@ -20,11 +22,11 @@ public:
 	Catalog *m_Catalog;
 	OrderDetails *m_OrderDetails;
 
-	toOrder();
+	string toOrder();
 
 private:
 	string customerName;
 	string paymentMethod;
 
 };
-#endif // !defined(EA_93EF3E41_2A37_4826_8A03_223371A83554__INCLUDED_)
+#endif // ORDERS_H

@@ -5,9 +5,11 @@
 //  Original author: moog
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_5DB0CD91_AD04_4af4_B86A_F896F79C1E6A__INCLUDED_)
-#define EA_5DB0CD91_AD04_4af4_B86A_F896F79C1E6A__INCLUDED_
+#ifndef ORDERDETAILS_H
+#define ORDERDETAILS_H
 
+#include <string>
+using namespace std;
 class OrderDetails
 {
 
@@ -15,7 +17,7 @@ public:
 	OrderDetails();
 	virtual ~OrderDetails();
 
-	totalCost();
+	double totalCost();
 
 private:
 	string bookAuthor;
@@ -26,4 +28,4 @@ private:
 	string releaseYear;
 
 };
-#endif // !defined(EA_5DB0CD91_AD04_4af4_B86A_F896F79C1E6A__INCLUDED_)
+#endif // !ORDERDETAILS_H

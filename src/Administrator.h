@@ -5,10 +5,12 @@
 //  Original author: moog
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_F7B8C6F4_3A2D_41cc_B767_B0B9A03A5C9B__INCLUDED_)
-#define EA_F7B8C6F4_3A2D_41cc_B767_B0B9A03A5C9B__INCLUDED_
+#ifndef _ADMINISTRATOR_H
+#define _ADMINISTRATOR_H
 
 #include "Class1.h"
+#include <string>
+using namespace std;
 
 class Administrator : public Register
 {
@@ -25,4 +27,4 @@ private:
 	string adminPassword;
 
 };
-#endif // !defined(EA_F7B8C6F4_3A2D_41cc_B767_B0B9A03A5C9B__INCLUDED_)
+#endif // _ADMINISTRATOR_H

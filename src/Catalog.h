@@ -5,9 +5,11 @@
 //  Original author: moog
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_047EA1F6_3053_488a_8D0B_60B1BEAA1B9C__INCLUDED_)
-#define EA_047EA1F6_3053_488a_8D0B_60B1BEAA1B9C__INCLUDED_
+#ifndef _CATALOG_H
+#define _CATALOG_H
 
+#include <string>
+using namespace std;
 class Catalog
 {
 
@@ -15,7 +17,7 @@ public:
 	Catalog();
 	virtual ~Catalog();
 
-	updateInfo();
+	void updateInfo();
 
 private:
 	string bookAuthor;
@@ -24,4 +26,4 @@ private:
 	string bookType;
 
 };
-#endif // !defined(EA_047EA1F6_3053_488a_8D0B_60B1BEAA1B9C__INCLUDED_)
+#endif // _CATALOG_H

@@ -6,6 +6,7 @@
 ///////////////////////////////////////////////////////////
 
 #include "Administrator.h"
+#include <iostream>
 
 
 Administrator::Administrator(){

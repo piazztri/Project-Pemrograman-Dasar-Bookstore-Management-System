@@ -17,8 +17,6 @@ class Administrator : public Register
 
 public:
 	Administrator();
-	virtual ~Administrator();
-
 	bool updateCatalog();
 
 private:

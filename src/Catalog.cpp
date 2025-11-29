@@ -6,6 +6,7 @@
 ///////////////////////////////////////////////////////////
 
 #include "Catalog.h"
+#include <iostream>
 
 
 Catalog::Catalog(){

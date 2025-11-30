@@ -6,47 +6,22 @@
 ///////////////////////////////////////////////////////////
 
 #include "Class1.h"
-
-
-Class1::Class1(){
-
-}
-
-
-
-Class1::~Class1(){
-
-}
-
-
-
-
-
-void Class1::firstName(){
-
-}
-
-
-void Class1::lastName(){
-
-}
-
+#include <iostream>
+#include <string>
 
 Register::Register(){
-
+	emailUser = "-";
+	password = "-";
 }
-
-
 
 Register::~Register(){
 
 }
 
-
-
-
-
 bool Register::verifyLogin(){
-
-	return false;
+	cout << "Enter your email: ";
+	getline(cin, emailUser);
+	cout << "Enter your password: ";
+	getline(cin, password);
+	return true;
 }

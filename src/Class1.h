@@ -10,23 +10,6 @@
 
 #include <string>
 using namespace std;
-class Class1
-{
-
-public:
-	Class1();
-	virtual ~Class1();
-
-	void lastName();
-
-private:
-	string firstName;
-	string lastName;
-
-	void firstName();
-
-};
-
 class Register
 {
 
@@ -39,6 +22,5 @@ public:
 private:
 	string emailUser;
 	string password;
-
 };
 #endif // CLASS1_H

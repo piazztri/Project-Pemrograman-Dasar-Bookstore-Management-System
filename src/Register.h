@@ -16,7 +16,6 @@ class Register
 public:
 	Register();
 	virtual ~Register();
-
 	void verifyRegister();
 
 private:

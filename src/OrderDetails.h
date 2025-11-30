@@ -16,7 +16,6 @@ class OrderDetails
 public:
 	OrderDetails();
 	virtual ~OrderDetails();
-
 	double totalCost();
 
 private:

@@ -6,22 +6,30 @@
 ///////////////////////////////////////////////////////////
 
 #include "OrderDetails.h"
-
+#include <iostream>
 
 OrderDetails::OrderDetails(){
-
+    bookAuthor = "-";
+    bookPrice = "0.0";
+    bookTitle = "-";
+    bookType = "-";
+    quantity = 0;
+    releaseYear = "-";
 }
-
-
 
 OrderDetails::~OrderDetails(){
 
 }
 
-
-
-
-
-OrderDetails::totalCost(){
-
+double OrderDetails::totalCost(){
+    cout << "\n=== Details of Order: ===\n";
+    cout << "Book Author: " << bookAuthor << endl;
+    cout << "Book Title: " << bookTitle << endl;
+    cout << "Book Type: " << bookType << endl;
+    cout << "Release Year: " << releaseYear << endl;
+    cout << "Quantity: " << quantity << endl;
+    double price = stod(bookPrice);
+    double total = price * quantity;
+    cout << "Total Cost: Rp. " << total << endl;
+    return total;
 }

@@ -10,19 +10,25 @@
 
 
 Catalog::Catalog(){
-
+    bookTitle = "-";
+    bookAuthor = "-";
+    bookType = "-";
+    bookAvailability = 0;
 }
-
-
 
 Catalog::~Catalog(){
 
 }
 
-
-
-
-
-Catalog::updateInfo(){
-
+void Catalog::updateInfo(){
+cout << "\n========== Update Book Info =========\n";
+cout << "Enter Book Title: ";
+getline(cin, bookTitle);
+cout << "Enter Book Author: ";
+getline(cin, bookAuthor);
+cout << "Enter Book Type: ";
+getline(cin, bookType);
+cout << "Enter Book Availability: ";
+cin >> bookAvailability;
+cout << "Data Updated Successfully!\n";
 }

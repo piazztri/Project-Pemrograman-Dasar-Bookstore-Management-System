@@ -16,7 +16,6 @@ class Catalog
 public:
 	Catalog();
 	virtual ~Catalog();
-
 	void updateInfo();
 
 private:

@@ -8,22 +8,14 @@
 #include "Administrator.h"
 #include <iostream>
 
-
 Administrator::Administrator(){
 
 }
-
-
 
 Administrator::~Administrator(){
 
 }
 
-
-
-
-
 bool Administrator::updateCatalog(){
-
-	return false;
+	return true;
 }

@@ -11,18 +11,17 @@
 #include "Class1.h"
 #include <string>
 using namespace std;
-
 class Administrator : public Register
 {
 
 public:
 	Administrator();
+	~Administrator();
 	bool updateCatalog();
 
 private:
 	string adminEmail;
 	string adminName;
 	string adminPassword;
-
 };
 #endif // _ADMINISTRATOR_H

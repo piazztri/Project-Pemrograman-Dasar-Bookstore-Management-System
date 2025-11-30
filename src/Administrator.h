@@ -9,19 +9,16 @@
 #define _ADMINISTRATOR_H
 
 #include "Register.h"
-#include <string>
-using namespace std;
+#include "Catalog.h"
 class Administrator : public Register
 {
 
 public:
 	Administrator();
 	~Administrator();
-	bool updateCatalog();
+	bool loginAdmin(string password);
+	bool updateCatalog(Catalog &cat);
 
 private:
-	string adminEmail;
-	string adminName;
-	string adminPassword;
 };
 #endif // _ADMINISTRATOR_H

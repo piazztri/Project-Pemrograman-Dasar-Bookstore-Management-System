@@ -20,11 +20,12 @@ Customer::~Customer(){
 }
 
 void Customer::login(){
-
+    Login loginObj;
+    loginObj.verifyLogin();
 }
 
 void Customer::registerUser(){
-
+    verifyRegister();
 }
 
 void Customer::updateProfile(){
@@ -38,4 +39,8 @@ void Customer::updateProfile(){
     cout << "Enter your bank account: ";
     getline(cin, bankAccount);
     cout << "Profile updated successfully!\n";
+}
+
+void Customer::viewCatalog(Catalog cat) {
+    cat.displayCatalog();
 }

@@ -16,6 +16,12 @@ Administrator::~Administrator(){
 
 }
 
-bool Administrator::updateCatalog(){
-	return true;
+bool Administrator::loginAdmin (string password) {
+    if (password == "admin123") return true;
+    return false;
+}
+
+bool Administrator::updateCatalog(Catalog &cat) {
+    cat.updateInfo();
+    return true;
 }

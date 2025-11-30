@@ -17,6 +17,7 @@ public:
 	Catalog();
 	virtual ~Catalog();
 	void updateInfo();
+	void displayCatalog();
 
 private:
 	string bookAuthor;

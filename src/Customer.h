@@ -10,6 +10,8 @@
 
 #include "Orders.h"
 #include "Register.h"
+#include "Catalog.h"
+#include "Login.h"
 #include <string>
 using namespace std;
 
@@ -23,6 +25,7 @@ public:
 	void login();
 	void registerUser();
 	void updateProfile();
+	void viewCatalog(Catalog cat);
 
 private:
 	string bankAccount;

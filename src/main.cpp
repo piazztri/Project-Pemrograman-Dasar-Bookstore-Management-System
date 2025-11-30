@@ -1,43 +1,47 @@
 #include <bits/stdc++.h>
-#include "Administrator.h"
 #include "Catalog.h"
+#include "Administrator.h"
 #include "Customer.h"
-#include "Login.h"
-#include "OrderDetails.h"
-#include "Orders.h"
-#include "Register.h"
 using namespace std;
 
-int main(){
-    cout << "Welcome to the Bookstore Management System!" << endl;
-    cout << "Please select an option:" << endl;
-    cout << "1. Login" << endl;
-    cout << "2. Register" << endl;
-    cout << "4. Exit" << endl;
-    cout << "Enter your choice: ";
+void customerMenu(){
+    Customer cust;
     int choice;
-    cin >> choice;
-    cin.ignore(); // To ignore the newline character after the integer input
 
-    switch(choice){
-        case 1:{
-            Login login;
-            login.verifyLogin();
-            break;
+    do {
+        cout << "\n===== Customer Menu =====\n";
+        cout << "1. Register\n";
+        cout << "2. Login\n";
+        cout << "3. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+        cin.ignore(); // To ignore the newline character after integer input
+
+        switch (choice) {
+            case 1:
+                cust.registerUser();
+                break;
+            case 2:
+                cust.login();
+                break;
+            case 3:
+                cout << "Exiting Customer Menu.\n";
+                break;
+            default:
+                cout << "Invalid choice. Please try again.\n";
         }
-        case 2:{
-            Register reg;
-            reg.verifyRegister();
-            break;
-        }
-        case 3:{
-            cout << "Exiting the system. Goodbye!" << endl;
-            break;
-        }
-        default:{
-            cout << "Invalid choice. Please try again." << endl;
-            break;
-        }
-    }
-    return 0;
+    } while (choice != 0 && choice < 4);
+}
+
+void adminMenu(){
+    Administrator admin;
+    int choice;
+    string password;
+
+
+    
+}
+
+int main(){
+    
 }

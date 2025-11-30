@@ -32,3 +32,12 @@ cout << "Enter Book Availability: ";
 cin >> bookAvailability;
 cout << "Data Updated Successfully!\n";
 }
+
+void Catalog::displayCatalog() {
+    cout << "\n=== Book Info ===\n";
+    cout << "Title  : " << bookTitle << endl;
+    cout << "Author : " << bookAuthor << endl;
+    cout << "Type   : " << bookType << endl;
+    cout << "Stok   : " << bookAvailability << endl;
+    cout << "----------------------" << endl;
+}

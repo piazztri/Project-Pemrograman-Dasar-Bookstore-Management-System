@@ -21,12 +21,10 @@ Customer::~Customer(){
 
 bool Customer::login(){
     Login loginObj;
-    loginObj.verifyLogin();
     if (loginObj.verifyLogin()) {
         cout << "Login successful! Welcome, " << customerName << ".\n";
     } else {
-        cout << "Login failed! Please check your credentials.\n";
-        return false;
+        cout << "Login failed! Please check your credentials.\n"; return false;
     }
 }
 

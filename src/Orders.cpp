@@ -6,22 +6,22 @@
 ///////////////////////////////////////////////////////////
 
 #include "Orders.h"
-
+#include <iostream>
+#include <string>
+using namespace std;
 
 Orders::Orders(){
-
+    customerName = "-";
+    paymentMethod = "-";
 }
-
-
 
 Orders::~Orders(){
 
 }
 
-
-
-
-
-Orders::toOrder(){
-
+string Orders::toOrder(){
+    cout << "Enter customer name: ";
+    getline(cin, customerName);
+    cout << "Enter payment method: ";
+    getline(cin, paymentMethod);
 }

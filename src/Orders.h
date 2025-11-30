@@ -21,7 +21,6 @@ public:
 	virtual ~Orders();
 	Catalog *m_Catalog;
 	OrderDetails *m_OrderDetails;
-
 	string toOrder();
 
 private:

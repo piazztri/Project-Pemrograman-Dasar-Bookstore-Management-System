@@ -9,7 +9,7 @@
 #define CLASSBOOK_H
 
 #include "Orders.h"
-#include "Class1.h"
+#include "Register.h"
 #include <string>
 using namespace std;
 

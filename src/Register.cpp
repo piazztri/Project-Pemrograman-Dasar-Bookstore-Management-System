@@ -5,7 +5,7 @@
 //  Original author: moog
 ///////////////////////////////////////////////////////////
 
-#include "Class1.h"
+#include "Register.h"
 #include <iostream>
 #include <string>
 
@@ -18,7 +18,7 @@ Register::~Register(){
 
 }
 
-bool Register::verifyLogin(){
+bool Register::verifyRegister(){
 	cout << "Enter your email: ";
 	getline(cin, emailUser);
 	cout << "Enter your password: ";

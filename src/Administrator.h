@@ -8,7 +8,7 @@
 #ifndef _ADMINISTRATOR_H
 #define _ADMINISTRATOR_H
 
-#include "Class1.h"
+#include "Register.h"
 #include <string>
 using namespace std;
 class Administrator : public Register

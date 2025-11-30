@@ -5,8 +5,8 @@
 //  Original author: moog
 ///////////////////////////////////////////////////////////
 
-#ifndef CLASS1_H
-#define CLASS1_H
+#ifndef REGISTER_H
+#define REGISTER_H
 
 #include <string>
 using namespace std;
@@ -17,10 +17,10 @@ public:
 	Register();
 	virtual ~Register();
 
-	bool verifyLogin();
+	bool verifyRegister();
 
 private:
 	string emailUser;
 	string password;
 };
-#endif // CLASS1_H
+#endif // REGISTER_H

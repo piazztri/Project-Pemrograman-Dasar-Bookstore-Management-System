@@ -18,12 +18,11 @@ Register::~Register(){
 
 }
 
-bool Register::verifyRegister(){
+void Register::verifyRegister(){
 	cout << "\n=== Register your account ===\n";
 	cout << "Enter your email: ";
 	getline(cin, emailUser);
 	cout << "Enter your password: ";
 	getline(cin, password);
 	cout << "Registration successful!\n";
-	return true;
 }

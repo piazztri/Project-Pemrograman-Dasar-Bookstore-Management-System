@@ -17,7 +17,7 @@ public:
 	Register();
 	virtual ~Register();
 
-	bool verifyRegister();
+	void verifyRegister();
 
 private:
 	string emailUser;

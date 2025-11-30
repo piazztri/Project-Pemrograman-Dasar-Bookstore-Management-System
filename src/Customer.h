@@ -22,7 +22,7 @@ public:
 	Customer();
 	virtual ~Customer();
 	Orders *m_Orders;
-	void login();
+	bool login();
 	void registerUser();
 	void updateProfile();
 	void viewCatalog(Catalog cat);

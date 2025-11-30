@@ -19,9 +19,15 @@ Customer::~Customer(){
 
 }
 
-void Customer::login(){
+bool Customer::login(){
     Login loginObj;
     loginObj.verifyLogin();
+    if (loginObj.verifyLogin()) {
+        cout << "Login successful! Welcome, " << customerName << ".\n";
+    } else {
+        cout << "Login failed! Please check your credentials.\n";
+        return false;
+    }
 }
 
 void Customer::registerUser(){

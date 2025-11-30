@@ -16,12 +16,10 @@ class Login
 public:
 	Login();
 	virtual ~Login();
-
 	bool verifyLogin();
 
 private:
 	string emailLogin;
 	string passLogin;
-
 };
 #endif // LOGIN_H

@@ -6,23 +6,21 @@
 ///////////////////////////////////////////////////////////
 
 #include "Login.h"
-
+#include <iostream>
 
 Login::Login(){
-
+	emailLogin = "-";
+	passLogin = "-";
 }
-
-
 
 Login::~Login(){
 
 }
-
-
-
-
-
 bool Login::verifyLogin(){
-
-	return false;
+	cout << "\n=== Login ===\n";
+	cout << "Enter your email: ";
+	getline(cin, emailLogin);
+	cout << "Enter your password: ";
+	getline(cin, passLogin);
+	return true;
 }

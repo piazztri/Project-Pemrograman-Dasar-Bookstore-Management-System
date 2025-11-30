@@ -20,7 +20,6 @@ public:
 	Customer();
 	virtual ~Customer();
 	Orders *m_Orders;
-
 	void login();
 	void registerUser();
 	void updateProfile();
@@ -30,6 +29,5 @@ private:
 	string customerAddress;
 	string customerName;
 	string phoneNumber;
-
 };
 #endif // CLASSBOOK_H

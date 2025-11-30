@@ -5,7 +5,7 @@
 //  Original author: moog
 ///////////////////////////////////////////////////////////
 
-#include "class book.h"
+#include "Customer.h"
 #include <iostream>  
 
 Customer::Customer(){

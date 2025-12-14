@@ -14,17 +14,21 @@ class OrderDetails
 {
 
 public:
-	OrderDetails();
-	virtual ~OrderDetails();
-	double totalCost();
-
-private:
 	string bookAuthor;
 	string bookPrice;
 	string bookTitle;
 	string bookType;
 	int quantity;
-	string releaseYear;
+	
 
+OrderDetails();
+OrderDetails(const string &title,
+			const string &author,
+            const string &type,
+            int qty,
+            const string &price);
+
+	double totalCost() const;
 };
-#endif // !ORDERDETAILS_H
+
+#endif 

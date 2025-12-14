@@ -14,11 +14,9 @@ class Administrator : public Register
 {
 
 public:
-	Administrator();
-	~Administrator();
 	bool loginAdmin(string password);
 	bool updateCatalog(Catalog &cat);
 
 private:
 };
-#endif // _ADMINISTRATOR_H
+#endif 

@@ -10,16 +10,23 @@
 
 #include <string>
 using namespace std;
-class Register
-{
 
+class Register {
 public:
-	Register();
-	virtual ~Register();
-	void verifyRegister();
+    Register();
+    virtual ~Register();
 
-private:
-	string emailUser;
-	string password;
+    void verifyRegister();
+    string getEmail() const;   
+	string getPassword() const{
+		return password;
+	}
+
+protected:
+    string emailUser;
+    string password;
 };
-#endif // REGISTER_H
+
+#endif
+
+

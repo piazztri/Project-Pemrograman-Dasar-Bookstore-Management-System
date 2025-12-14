@@ -8,24 +8,27 @@
 #ifndef ORDERS_H
 #define ORDERS_H
 
-#include "Catalog.h"
+
 #include "OrderDetails.h"
 #include <string>
+#include <vector>
 using namespace std;
 
 class Orders
 {
 
 public:
-	Orders();
-	virtual ~Orders();
-	Catalog *m_Catalog;
-	OrderDetails *m_OrderDetails;
-	string toOrder();
-
-private:
 	string customerName;
-	string paymentMethod;
+    string paymentMethod;
 
+    vector<OrderDetails> items; //list of order detail items
+
+    Orders();
+    ~Orders();
+
+    void addItem(const OrderDetails &item);
+    double getTotal() const;
+    void displayOrderSummary() const;
+    void clearOrder();
 };
-#endif // ORDERS_H
+#endif 

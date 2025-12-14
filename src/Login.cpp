@@ -7,6 +7,7 @@
 
 #include "Login.h"
 #include <iostream>
+#include <limits>
 
 Login::Login(){
 	emailLogin = "-";
@@ -16,11 +17,16 @@ Login::Login(){
 Login::~Login(){
 
 }
-bool Login::verifyLogin(){
-	cout << "\n=== Login ===\n";
-	cout << "Enter your email: ";
-	getline(cin, emailLogin);
-	cout << "Enter your password: ";
-	getline(cin, passLogin);
-	return true;
+bool Login::verifyLogin(string &outEmail) { //to login
+    cout << "\n=== Login ===\n";
+
+    
+	
+    cout << "Enter your email: ";
+    getline(cin, emailLogin);
+
+    cout << "Enter your password: ";
+    getline(cin, passLogin);
+	outEmail = emailLogin;
+    return true;
 }

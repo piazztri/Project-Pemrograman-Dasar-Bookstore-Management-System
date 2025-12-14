@@ -22,10 +22,12 @@ public:
 	Customer();
 	virtual ~Customer();
 	Orders *m_Orders;
-	bool login();
+
 	void registerUser();
+	bool login();
 	void updateProfile();
-	void viewCatalog(Catalog cat);
+	void viewCatalog(Catalog &cat);
+	void buyBooks(Catalog &cat);
 
 private:
 	string bankAccount;
@@ -33,4 +35,4 @@ private:
 	string customerName;
 	string phoneNumber;
 };
-#endif // CLASSBOOK_H
+#endif 

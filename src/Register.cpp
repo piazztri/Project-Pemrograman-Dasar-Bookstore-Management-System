@@ -8,6 +8,7 @@
 #include "Register.h"
 #include <iostream>
 #include <string>
+#include <limits>
 
 Register::Register(){
 	emailUser = "-";
@@ -18,8 +19,13 @@ Register::~Register(){
 
 }
 
+string Register::getEmail() const {
+    return emailUser;
+}
+
 void Register::verifyRegister(){
-	cout << "\n=== Register your account ===\n";
+	cout << "\n=== Register your account ===\n"; //to register
+
 	cout << "Enter your email: ";
 	getline(cin, emailUser);
 	cout << "Enter your password: ";

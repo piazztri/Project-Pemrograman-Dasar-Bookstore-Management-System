@@ -7,19 +7,19 @@
 
 #ifndef LOGIN_H
 #define LOGIN_H
+
 #include <string>
 using namespace std;
 
-class Login
-{
-
+class Login {
 public:
-	Login();
-	virtual ~Login();
-	bool verifyLogin();
+    string emailLogin;   
+    string passLogin;
 
-private:
-	string emailLogin;
-	string passLogin;
+    Login();
+    ~Login();
+
+    bool verifyLogin(string &outEmail);
 };
-#endif // LOGIN_H
+
+#endif

@@ -8,20 +8,11 @@
 #include "Administrator.h"
 #include <iostream>
 
-Administrator::Administrator(){
-
+bool Administrator::loginAdmin (string password) { //admin password to login
+    return password == "admin123";
 }
 
-Administrator::~Administrator(){
-
-}
-
-bool Administrator::loginAdmin (string password) {
-    if (password == "admin123") return true;
-    return false;
-}
-
-bool Administrator::updateCatalog(Catalog &cat) {
+bool Administrator::updateCatalog(Catalog &cat) { //to allow administrator to update the catalog
     cat.updateInfo();
     return true;
 }

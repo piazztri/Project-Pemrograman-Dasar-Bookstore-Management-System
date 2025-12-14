@@ -5,25 +5,33 @@
 //  Original author: moog
 ///////////////////////////////////////////////////////////
 
-#ifndef _CATALOG_H
-#define _CATALOG_H
+#ifndef CATALOG_H
+#define CATALOG_H
 
 #include <string>
 using namespace std;
-class Catalog
-{
 
+class Catalog {
 public:
-	Catalog();
-	virtual ~Catalog();
-	void updateInfo();
-	void displayCatalog();
+    Catalog();
+    virtual ~Catalog();
+
+    void updateInfo();
+    void displayCatalog();
+
+    string getTitle() const;
+    string getAuthor() const;
+    string getType() const;
+    int getStock() const;
+    double getPrice() const;
+    void reduceStock(int qty);
 
 private:
-	string bookAuthor;
-	int bookAvailability;
-	string bookTitle;
-	string bookType;
-
+    string bookTitle;
+    string bookAuthor;
+    string bookType;
+    int bookAvailability;
+    double bookPrice;
 };
-#endif // _CATALOG_H
+
+#endif

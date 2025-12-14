@@ -14,22 +14,25 @@ OrderDetails::OrderDetails(){
     bookTitle = "-";
     bookType = "-";
     quantity = 0;
-    releaseYear = "-";
 }
 
-OrderDetails::~OrderDetails(){
-
+OrderDetails::OrderDetails(const string &title, //initialize OrderDetails book
+                           const string &author,
+                           const string &type,
+                           int qty,
+                           const string &price) {
+    bookTitle = title;
+    bookAuthor = author;
+    bookType = type;
+    quantity = qty;
+    bookPrice = price;
 }
 
-double OrderDetails::totalCost(){
-    cout << "\n=== Details of Order: ===\n";
-    cout << "Book Author: " << bookAuthor << endl;
-    cout << "Book Title: " << bookTitle << endl;
-    cout << "Book Type: " << bookType << endl;
-    cout << "Release Year: " << releaseYear << endl;
-    cout << "Quantity: " << quantity << endl;
-    double price = stod(bookPrice);
-    double total = price * quantity;
-    cout << "Total Cost: Rp. " << total << endl;
-    return total;
+double OrderDetails::totalCost() const { //to count total price 
+    double p = 0.0;
+    try {
+        p = stod(bookPrice);
+    } catch (...) {
+    }
+    return p * static_cast<double>(quantity);
 }
